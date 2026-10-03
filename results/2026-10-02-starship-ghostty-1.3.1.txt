@@ -1,0 +1,24 @@
+# 2026-10-02T20:56:19-05:00, load 9.73 16.74 19.74, Linux 7.2.5-3-omarchy, Ghostty 1.3.1-arch2
+silent, 10 runs each: median / slowest, ms
+  default
+    query_ms     2005.14   2008.30
+    protocol   Halfblocks
+    capabilities []
+  timeout=500
+    query_ms      504.23    506.82
+    protocol   Halfblocks
+    capabilities []
+terminal, 10 runs each: median / slowest, ms
+  default
+    query_ms        0.33     15.73
+    encode_ms      14.63     23.56
+    draw_ms        63.43     69.56
+    protocol   Kitty
+    capabilities [Kitty, CellSize(Some((14, 28)))]
+  shm
+    query_ms        0.56      1.47
+    encode_ms      10.07     21.41
+    draw_ms         0.21      1.38
+    protocol   Kitty
+    capabilities [Kitty, KittySharedMemory, CellSize(Some((14, 28)))]
+  shared memory objects left in /dev/shm: 0

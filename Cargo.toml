@@ -1,0 +1,17 @@
+[package]
+name = "ratatui-image-query-options"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+image = { version = "0.25", default-features = false }
+ratatui = "0.30"
+ratatui-image = { version = "=12.0.0-rc.0", default-features = false, features = ["crossterm"] }
+
+[profile.release]
+debug = false
+
+[[bin]]
+name = "query-options"
+path = "src/main.rs"
